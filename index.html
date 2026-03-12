@@ -198,86 +198,34 @@
                   <p style="font-size:13pt; font-weight: 300; text-align: center; padding: 0px 60px 0px 60px;" class="font-serif">What is the current state-of-the-art for image restoration for images captured in non-ideal circumstances? How can inference be performed on novel kinds of computational photography devices?</p>
 
                     <p style="font-size:14pt; "> The UG<sup>2</sup>+ Challenge seeks to advance the analysis of "difficult" imagery by applying image restoration and enhancement algorithms to improve analysis performance. Participants are tasked with developing novel algorithms to improve the analysis of imagery captured under problematic conditions.</p>
-                    <div class="row multi-columns-row">
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-8">
-                          <div class="alt-features-item">
-                            <a href="track1.html"><div class="alt-features-icon"><span class="fas fa-cloud"></span></div>
-                            <h3 class="alt-features-title font-alt">Object Detection in Haze</h3></a>
-                            <p>While most current vision systems are designed to perform in environments where the subjects are well observable without (significant) attenuation or alteration, a dependable vision system must reckon with the entire spectrum of complex unconstrained and dynamic degraded outdoor environments. It is highly desirable to study to what extent, and in what sense, such challenging visual conditions can be coped with, for the goal of achieving robust visual sensing.</p>
-                            <!-- TODO -->
-                            <p>Our challenge is based on the A2I2-Haze, the first real haze dataset with in-situ smoke measurement aligned to aerial and ground imagery.</p>
-                            <!-- <h4>Sub-Challenges</h4>
-                            <ol>
-                              <b><li>Object Detection in the Hazy Condition</li></b>
-                              <b><li>Face Detection in the Low-Light Condition</li></b>
-                            </ol> -->
+                    <div class=”row multi-columns-row”>
+                      <div class=”row”>
+                        <div class=”col-md-4 col-sm-4 col-xs-8”>
+                          <div class=”alt-features-item”>
+                            <a href=”track1.html”><div class=”alt-features-icon”><span class=”fas fa-cloud-sun-rain”></span></div>
+                            <h3 class=”alt-features-title font-alt”>Track 1: Image Restoration under All-weather Conditions</h3></a>
+                            <p>Images captured under adverse weather conditions such as rain, fog, haze, and snow suffer from severe quality degradation. This challenge focuses on developing robust image restoration algorithms that can handle the full spectrum of real-world weather degradations, improving downstream vision task performance under all-weather conditions.</p>
+                            <p><a href=”https://www.codabench.org/competitions/13557/” target=”_blank” style=”color: #337ab7; text-decoration: underline”>Competition page on Codabench</a></p>
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-8">
-                          <div class="alt-features-item"> 
-                            <a href="track2.html"><div class="alt-features-icon"><fa class="fas fa-fire"></fa></div>
-                            <h3 class="alt-features-title font-alt">Atmospheric Turbulence Mitigation</h3></a>
+                        <div class=”col-md-4 col-sm-4 col-xs-8”>
+                          <div class=”alt-features-item”>
+                            <a href=”track2.html”><div class=”alt-features-icon”><fa class=”fas fa-cloud-moon”></fa></div>
+                            <h3 class=”alt-features-title font-alt”>Track 2: Semantic Segmentation in Adverse Weather</h3></a>
                             <p>
-                              The theories of turbulence and propagation of light through random media have been studied for the better part of a century. Yet progress for associated image reconstruction algorithms has been slow, as the turbulence mitigation problem has not thoroughly been given the modern treatments of advanced image processing approaches (e.g., deep learning methods) that have positively impacted a wide variety of other imaging domains (e.g., classification).
+                              Common weather phenomena including rain, snow, and fog introduce visual degradations that significantly impact the performance of semantic segmentation algorithms. This challenge aims to spark the development of novel segmentation algorithms robust to adverse weather conditions, bridging the domain gap between clear and degraded imagery.
                             </p>
-                            <p>This challenge aims to promote the development of new image reconstruction algorithms for incoherent imaging through anisoplanatic turbulence.</p>
-                            <!-- <h4>Sub-Challenges</h4>
-                            <ol>
-                              <b><li>Fully Supervised Action Recognition in the Dark</li></b>
-                              <b><li>Semi-supervised Action Recognition in the Dark</li></b>
-                            </ol> -->
+                            <p><a href=”https://www.codabench.org/competitions/13555/” target=”_blank” style=”color: #337ab7; text-decoration: underline”>Competition page on Codabench</a></p>
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-8">
-                          <div class="alt-features-item"> 
-                            <a href="track3.html"><div class="alt-features-icon"><fa class="fas fa-cloud-moon"></fa></div>
-                              <h3 class="alt-features-title font-alt">All weather semantic segmentation</h3></a>
+                        <div class=”col-md-4 col-sm-4 col-xs-8”>
+                          <div class=”alt-features-item”>
+                            <a href=”track3.html”><div class=”alt-features-icon”><fa class=”fas fa-fire”></fa></div>
+                              <h3 class=”alt-features-title font-alt”>Track 3: Dynamic Object Segmentation in Turbulence (DOST)</h3></a>
                             <p>
-                              Images captured in adverse weather conditions significantly impact the performance of many vision tasks. Common weather phenomenon, including but not limited to rain, snow, fog, introduce visual degradations to captured images and videos. These degradations may include partial to severe occlusions of objects, illumination changes, noise, etc. As most vision algorithms assume clear weather, with no interference of particles present under adverse weather, their performance suffers due to the domain gap. 
+                              Atmospheric turbulence causes severe image degradation including spatially-varying blur, distortion, and intensity fluctuations that challenge both detection and segmentation of dynamic objects. This challenge promotes the development of algorithms for segmenting moving objects in turbulence-degraded video sequences.
                             </p>
-                            <p>
-                              This challenge aims to spark the development of novel semantic segmentation algorithms for images captured under adverse weather conditions.
-                            </p>
-                            <!-- <h4>Sub-Challenges</h4>
-                            <ol>
-                              <b><li>Fully Supervised Action Recognition in the Dark</li></b>
-                              <b><li>Semi-supervised Action Recognition in the Dark</li></b>
-                            </ol> -->
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-8">
-                          <div class="alt-features-item"> 
-                            <a href="track4.html"><div class="alt-features-icon"><fa class="fas fa-cloud-moon"></fa></div>
-                            <h3 class="alt-features-title font-alt">3D Smoky Reconstruction</h3></a>
-                            <p>
-                              Computer vision in low visibility is a problem that faces many challenges and remains largely open. Amplitude scattering provides a unique challenge in visibility because of the amount of ambient light present in the scene which is depth-dependent. In the case of self-driving cars or commercial UAVs, the ability of an optical system to see “through” the haze or fog present in real-world imaging is critical for making decisions which have significant impact on safety.
-                            </p>
-                            <p>
-                              This challenge aims to promote development of accurate and efficient 3D reconstructions in the presence of amplitude scattering.
-                            </p>
-                            <!-- <h4>Sub-Challenges</h4>
-                            <ol>
-                              <b><li>Fully Supervised Action Recognition in the Dark</li></b>
-                              <b><li>Semi-supervised Action Recognition in the Dark</li></b>
-                            </ol> -->
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-8">
-                          <div class="alt-features-item"> 
-                            <a href="track5.html"><div class="alt-features-icon"><fa class="fas fa-helicopter"></fa></div>
-                            <h3 class="alt-features-title font-alt">UAV Tracking and Pose Estimation</h3></a>
-                            <p>
-                              Recently, UAVs have become a major concern in frontline combat, contraband smuggling, and the endangerment of commercial aircraft, among other areas. Due to their compact size and quiet electric motors, they are difficult to detect by soldiers, law-enforcement and vehicles. 
-                            </p>
-                            <p>
-                              This challenge is positioned to play a pivotal role in advancing UAV threat detection, classification, trajectory estimation capabilities, and more.
-                            </p>
-                            <!-- <h4>Sub-Challenges</h4>
-                            <ol>
-                              <b><li>Fully Supervised Action Recognition in the Dark</li></b>
-                              <b><li>Semi-supervised Action Recognition in the Dark</li></b>
-                            </ol> -->
+                            <p><a href=”https://www.codabench.org/competitions/13550/” target=”_blank” style=”color: #337ab7; text-decoration: underline”>Competition page on Codabench</a></p>
                           </div>
                         </div>
                       </div>

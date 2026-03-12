@@ -66,109 +66,33 @@
         <div class="container" style="width:100%">
           <div class="row" style="padding-top: 40px">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 2: Atmospheric Turbulence Mitigation</h2>
-              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSepaa-sOJRAgwCG7V-ubR-lmuJKZx6gCj-YftFLCDAmc3CmEA/viewform?usp=sf_link" target="_blank" class="section-scroll btn btn-border-w btn-round">Register for this track</a></h3>
+              <h2 class="module-title font-alt" style="margin: 0 0 0px">Track 2: Semantic Segmentation in Adverse Weather</h2>
+              <h3 class="module-subtitle font-serif" style="margin: 0 0 20px"><a href="https://www.codabench.org/competitions/13555/" target="_blank" class="section-scroll btn btn-border-w btn-round">Compete on Codabench</a></h3>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="module-medium" style="padding-bottom: 0px">
+      <section class=”module-medium” style=”padding-bottom: 0px”>
+        <div class=”container”>
+          <div class=”row” style=”text-align: justify”>
+            <div class=”col-sm-12 font-nat” style=”font-size: 13pt”>
+              <p>Common weather phenomena including rain, snow, fog, and haze introduce visual degradations that significantly impact the performance of semantic segmentation algorithms. These degradations include partial to severe occlusions of objects, illumination changes, noise, and domain shift. As most vision algorithms assume clear weather conditions, their performance suffers from the domain gap between clean and degraded imagery.</p>
 
-        <!-- <div class="container" style="font-size: 30px; padding-bottom: 20px">
-          Link to the final submission form was sent via email. If you did not receive it, please email cvpr2020.ug2challenge.track2@gmail.com
-        </div> -->
-        <!-- Turbulence Figure -->
-        <div class="container" style="padding-bottom: 20px">
-            <figure>
-              <img src="assets/images/sample_data.jpg" style="width:75%;height:75%;margin-left:auto;margin-right:auto;display:block;border: none;">
-              <figcaption style="width:80%;margin-left:auto;margin-right:auto;display:block;text-align: center;">
-                <em>Left: New text recognition data this year (sub-track 1). Right: Sample coded target data (sub-track 2) </em> </figcaption>
-            </figure>
-        </div>
+              <p>UG<sup>2</sup>+ Track 2 aims to spark the development of novel semantic segmentation algorithms for images captured under adverse weather conditions. Participants are challenged to develop models that are robust to the full range of weather degradations encountered in real-world deployments.</p>
 
-        <!-- Text -->
-        <div class="container">
-          <div class="row" style="text-align: justify">
-            <div class="col-sm-12 font-nat" style="font-size: 13pt">
-              <!-- <p><b><i>Registration form: <span class="font-serif"><a href="https://forms.gle/hQueBuMmfDx182EH9"> LINK</a></span></i></b></p>  -->
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OMSXK7f0V6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-              <p>Imaging in environments that degrade the quality of an image sets a hard constraint on where our computer vision algorithms are effectively 
-                applied. Often, an image domain model for these situations is utilized with great success; points of interest are first used to estimate the 
-                distortion, the rectified images are then fed into a deblurring framework, and finally, a patch-matching scheme can be used to effectively 
-                denoise the image. More recently, large amounts of imagery, typically input-output pairs, can be used to train a complex network to remove 
-                effects that are difficult to model in the image domain. Despite these successes, there remain real-world scenarios in which neither of the 
-                previous methodologies is feasible. Imaging over long distances through atmospheric turbulence presents such a problem. Atmospheric 
-                turbulence imparts phase errors in the propagating light field, manifesting in the image as anisoplanatic, temporally-varying blur and 
-                distortion. Restoring an image or video sequence degraded by atmospheric turbulence is extremely ill-posed, so it remains a challenging 
-                but relevant computer vision problem. </p>
-              <p>The theories of turbulence and light propagation through random media have been studied for the better part of a century. Yet, progress for 
-                associated image reconstruction algorithms has been slow, as the turbulence mitigation problem has not thoroughly been given the modern 
-                treatments of advanced image processing approaches (e.g., deep learning methods) that have positively impacted a wide variety of other 
-                imaging domains (e.g., super resolution). This problem is due, in part, to the lack of access to imagery degraded by atmospheric turbulence, 
-                standardization in testing procedures, and suitable evaluation metrics. UG2+ Challenge 2 aims to promote the development of new image 
-                reconstruction algorithms for incoherent imaging through turbulence.  </p>  
-              <p>UG<sup>2</sup>+ Challenge 2 aims to promote the development of new image reconstruction algorithms for incoherent imaging through 
-                anisoplanatic turbulence. These approaches will likely require novel techniques for incorporating unique image formation processes. 
-                With the recent development of a scalable simulation tool and efforts to acquire a large-scale dataset, we aim to present, to our knowledge, 
-                the most comprehensive set of tools and resources for approaching this problem. The offered simulator for this challenge is differentiable, 
-                and this property would facilitate integration with deep networks. It has been shown that the models trained using these simulation tools 
-                produce near state-of-the-art performances relative to classical methods on real-world sequences. Through this challenge, we aim to bring 
-                increased attention to this problem and alleviate many aspects limiting its development in image reconstruction efforts. 
-                The participants will be asked to develop image reconstruction algorithms that targets at arbitary generic images.</p>
+              <p>Full competition details, dataset downloads, submission instructions, and evaluation guidelines are available on the official competition page on Codabench:</p>
 
-              
-                <p><b>There are two tracks available for this challenge:</b></p>
-                <ol>
-                <li> <b>Text Recognition through Atmospheric Turbulence.</b> Following the previous year's success, we continue running the same challenge track with 
-                  an upgraded dataset. We use the prestige images from the COCO-Text dataset and add the real-world turbulence effect using the heat chamber [2]. The 
-                  participant's task is to improve the image quality so that the text recognition system can successfully recognize the text sequence in the restored 
-                  images. To participate this challenge, please go to the <a href='https://codalab.lisn.upsaclay.fr/competitions/17240' 
-                  style="color: #337ab7; text-decoration: underline">CodaLab</a> page. </li>
-                <li> <b>Coded Target Restoration through Atmospheric Turbulence.</b> In this challenge, the participants are asked to develop restoration algorithms that 
-                  can faithfully recover a series of “coded targets” degraded by atmospheric turbulence. The coded target was patented by U.S. Army, DEVCOM, C5ISR Center, 
-                  Research and Technology Integration Directorate. The coded target is used to measure the proportion of information retained after the image restoration 
-                  is applied. The participant's task is to improve the image quality so that the infomation encoded in the target patterns can be successfully decoded. 
-                  To participate this challenge, please go to the <a href='https://codalab.lisn.upsaclay.fr/competitions/17241' 
-                  style="color: #337ab7; text-decoration: underline">CodaLab</a> page.</li>
-                </ol>
+              <p style=”text-align: center; padding: 20px 0;”>
+                <a href=”https://www.codabench.org/competitions/13555/” target=”_blank” class=”btn btn-g btn-round” style=”font-size: 14pt; padding: 12px 30px;”>View Competition on Codabench</a>
+              </p>
 
-
-
-              <p><b>Materials provided:</b></p>
-              
-              <ol>
-                <li> <b>Atmospheric Turbulence Simulator.</b> As in previous years, we offer a state-of-the-art atmospheric turbulences simulator [1] at this <a href='https://github.itap.purdue.edu/StanleyChanGroup/TurbulenceSim_P2S' 
-                  style="color: #337ab7; text-decoration: underline">repository</a>..
-                <li> <b>Datasets for training (New to 8th UG2+!).</b> New to this year, we additionally offer participants generated training data from our most recent simulation. This data is spread across 
-                  four datasets. The first pair comes from our Turb-Syn dataset consisting of
-                  <a href='https://app.box.com/s/c5wdsnxe0ax75e723jz8gk0dpai5zb7i' style="color: #337ab7; text-decoration: underline">dynamic</a>
-                  and
-                  <a href='https://app.box.com/s/q6l9mcyl73r5apwwat05xlf16zf7sua4' style="color: #337ab7; text-decoration: underline">static</a>
-                  with details accessible from the 
-                  <a href='https://xg416.github.io/TMT/' style="color: #337ab7; text-decoration: underline">project page</a>.
-                  The second pair of data is the ATSyn dataset, also divided into
-                  <a href='https://app.box.com/s/xbx844bppqls2cqi74apac49iln0ztbz' style="color: #337ab7; text-decoration: underline">dynamic</a>
-                  and
-                  <a href='https://app.box.com/s/ra9t5ngdv9m0u15o1eop3f6wvp3t5yqe' style="color: #337ab7; text-decoration: underline">static</a>
-                  data, with details coming from its respective
-                  <a href='https://xg416.github.io/DATUM/' style="color: #337ab7; text-decoration: underline">project page</a>.
-                </ol>
-
-<p style="text-align: justify">If you have any questions about this challenge track please feel free to email <a style="color: #337ab7; text-decoration: underline" href="mailto:cvpr2026.ug2challenge@gmail.com">cvpr2026.ug2challenge@gmail.com</a></p>
-              
-              <p style="padding-bottom: 40px"> References:<br>
-                  [1] Mao, Z., Chimitt, N., Chan, S. H., Oct, 2021. Accelerating Atmospheric Turbulence Simulation via Learned Phase-to-Space Transform, 
-                  In Proc. of IEEE/CVF International Conference on Computer Vision. pp 14759-14768<br> 
-                  [2] Mao, Z., Jaiswal, A., Wang, Z., Chan, S. H., Oct, 2022. Single Frame Atmospheric Turbulence Mitigation: A Benchmark Study 
-                  and A New Physics-Inspired Transformer Model, ECCV 2022<br> </p>
-
+              <p style=”text-align: justify; padding-bottom: 40px”>If you have any questions about this challenge track please feel free to email <a style=”color: #337ab7; text-decoration: underline” href=”mailto:cvpr2026.ug2challenge@gmail.com”>cvpr2026.ug2challenge@gmail.com</a></p>
             </div>
           </div>
-
         </div>
       </section>
-      <hr class="divider-w">
+      <hr class=”divider-w”>
 
     <a id="ddfooterLink" href="footer.html">Footer</a>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
